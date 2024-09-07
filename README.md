@@ -24,3 +24,32 @@ This project is a Telegram bot designed to inspire and motivate users with rando
 1. Install required dependencies:
    ```bash
    pip install telebot requests beautifulsoup4
+2. Set up your Telegram bot API token in the code:
+   - Replace the placeholder API token in `main.py`:
+     ```python
+     API_TOKEN = 'your-telegram-bot-api-token'
+     ```
+   - You can obtain a token by talking to the [BotFather](https://t.me/BotFather) on Telegram.
+
+3. Create the `quotes.json` file:
+   - Add your motivational quotes to the `quotes.json` file in the following format:
+     ```json
+     [
+       {
+         "quoteText": "Your time is limited, don't waste it living someone else's life.",
+         "quoteAuthor": "Steve Jobs"
+       },
+       {
+         "quoteText": "The only way to do great work is to love what you do.",
+         "quoteAuthor": "Steve Jobs"
+       }
+     ]
+     ```
+
+4. Start your bot:
+   - Run the following command to start the bot:
+     ```bash
+     python main.py
+     ```
+
+Once the bot is running, it will listen for commands and respond with motivational quotes or random images based on user input. You can interact with the bot in Telegram by typing `/motivate`, `/photo`, or `/start`.
